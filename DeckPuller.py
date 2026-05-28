@@ -1,5 +1,5 @@
 import requests
-import urllib
+import urllib.parse
 
 def get_deck_data(public_id: str):
     api_url = f"https://api.moxfield.com/v2/decks/all/{public_id}"

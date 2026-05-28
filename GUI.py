@@ -173,13 +173,13 @@ def submit_entries_comparator(entry1: tkinter.Entry, entry2: tkinter.Entry) -> N
     entry1.delete(0, len(entry1_submission))
     entry2.delete(0, len(entry2_submission))
     
-    current_deck1_info = DeckPuller.get_deck_info(entry1_submission)
+    current_deck1_info = DeckPuller.get_deck_info(entry1_submission) # type: ignore
     if current_deck1_info is None:
         tkinter.messagebox.showerror("Invalid Url", f"Sorry {entry1_submission} was not able to be pulled. Please ensure the URL is valid and try again")
         switch_frame(input_frame)
         return
     
-    current_deck2_info = DeckPuller.get_deck_info(entry2_submission)
+    current_deck2_info = DeckPuller.get_deck_info(entry2_submission) # type: ignore
     if current_deck2_info is None:
         tkinter.messagebox.showerror("Invalid Url", f"Sorry {entry2_submission} was not able to be pulled. Please ensure the URL is valid and try again")
         switch_frame(input_frame)
