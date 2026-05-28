@@ -1,0 +1,2 @@
+# Magic-The-Gathering-Deck-Comparison-Tool
+A little personal project I am working on for Magic: The Gathering deck building. Currently compares cards between decks, might eventually do other things if I get around to it
